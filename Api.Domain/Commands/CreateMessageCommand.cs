@@ -10,7 +10,7 @@ namespace Api.Domain.Commands
         public decimal Amount { get; set; }
         public string Currency { get; set; }
         public string OrderId { get; set; }
-        public CreateUserCommand CreateUserCommand{ get; set; }
+        public CreateUserCommand User{ get; set; }
 
     }
 }

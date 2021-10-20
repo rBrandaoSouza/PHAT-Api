@@ -20,7 +20,7 @@ namespace Api.Application.Commands
         }
         public async Task<OperationResult> HandleAsync(CreateMessageCommand command)
         {
-            var userId = await _dispatcher.DoAsync(command.CreateUserCommand);
+            var userId = await _dispatcher.DoAsync(command.User);
 
             var message = new Message()
             {

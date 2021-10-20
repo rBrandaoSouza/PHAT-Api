@@ -17,7 +17,7 @@ namespace Api.Infraestructure.Configurations
                .IsRequired();
 
             builder.Property(p => p.Ammount)
-               .HasColumnType("decimal")
+               .HasColumnType("decimal(5,2)")
                .HasPrecision(30,9)
                .IsRequired();
 
